@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section class="section__wrapper">
+            <picture class="detail__img">
+                <img class="detail__big" id="detail__big-product" src="assets/img/gallery-1.jpg" alt="shirt">
+                <div class="detail__small-container">
+                    <img class="detail__small" src="assets/img/gallery-1.jpg" alt="shirt">
+                    <img class="detail__small" src="assets/img/gallery-2.jpg" alt="shirt">
+                    <img class="detail__small" src="assets/img/gallery-3.jpg" alt="shirt">
+                    <img class="detail__small" src="assets/img/gallery-4.jpg" alt="">
+                </div>
+            </picture>
+            <div class="detail__text">
+                <span class="detail__section">Home/T-Shirt</span>
+                <h1 class="detail__title">Red Printd T-Shirt <br> by HRX</h1>
+                <span class="detail__price">$50.00</span>
+                <select class="detail__select" name="" id="">
+                    <option value="">Select Size</option>
+                    <option value="">Small</option>
+                    <option value="">Medium</option>
+                    <option value="">Large</option>
+                    <option value="">XL</option>
+                </select>
+                <div class="detail__cart-container">
+                    <input class="detail__input" value="1" type="number"> 
+                    <button class="detail__button">Add to Cart</button>
+                </div>
+                <h3 class="detail__subtitle">Product Details</h3>
+                <p class="detail__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, veniam consequatur? Dolorum sint quasi praesentium ratione odit earum in odio.</p>
+                
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        const bigImg = document.getElementById('detail__big-product');
+        const smallImg = document.getElementsByClassName('detail__small');
+
+        smallImg[0].onclick = function(){
+            bigImg.src =  smallImg[0].src;
+        }
+        smallImg[1].onclick = function(){
+            bigImg.src =  smallImg[1].src;
+        }
+        smallImg[2].onclick = function(){
+            bigImg.src =  smallImg[2].src;
+        }
+        smallImg[3].onclick = function(){
+            bigImg.src =  smallImg[3].src;
+        }
+
+    </script>
+</body>
+</html>
