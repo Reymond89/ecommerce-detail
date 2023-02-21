@@ -93,6 +93,9 @@
     border: none;
     border-radius: 20px;
 }
+.detail__button:hover{
+    background: #e77950;
+}
 .detail__subtitle{
     font-size: 1.4rem;
     font-weight: 800;
@@ -101,3 +104,36 @@
     font-size: 1rem;
     color: rgb(113, 108, 108);
 }
+
+/* BreakPoints */
+
+@media screen and (max-width: 780px) {
+    .section__wrapper{
+        width: 90%;
+        margin: auto;
+        flex-direction: column;
+        height: 100%;
+        padding: 30px 0;
+        max-width: 320px;
+    }
+    .detail__big{
+        width: 280px;
+    }
+    .detail__small-container{
+        width: 62px;
+    }
+    .detail__text{
+        width: 90%;
+        margin: auto;
+    }
+    .detail__title{
+        font-size: 1.7rem;
+        margin-bottom: 10px;
+    }
+    .detail__subtitle{
+        margin-top: 10px;
+        font-size: 1.3rem;
+    }
+
+}
+
