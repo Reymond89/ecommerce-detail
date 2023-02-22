@@ -74,7 +74,7 @@
     
     font-size: 0.8rem;
     color: black;
-    padding: 6px 8px;
+    padding: 9px 16px;
     border: 1px solid orangered;
     outline: none;
     background: none;
@@ -88,14 +88,16 @@
 .detail__button{
     cursor: pointer;
     font-size: 0.8rem;
-    padding: 6px 14px ;
-    background: orangered;
+    padding: 9px 16px ;
+    background: #e36638;
     color: white;
     border: none;
     border-radius: 20px;
 }
 .detail__button:hover{
-    background: #e77950;
+    background: orangered;
+    
+    
 }
 .detail__subtitle{
     font-size: 1.4rem;
